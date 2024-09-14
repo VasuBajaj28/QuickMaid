@@ -1,0 +1,978 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Nunito&family=Poppins:wght@300&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'poppins',sans-serif;
+}
+
+/*Home page CSS*/
+
+/*login CSS*/
+.Login {
+  font-family: "Nunito", sans-serif;
+}
+.login form {
+  max-width: 450px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border: solid #e8eeef;
+  border-radius: 8px;
+  background-color: white;
+}
+.login h2 {
+  text-align: center;
+}
+.login input[type="text"],
+.login input[type="password"],
+.login input[type="email"],
+.login input[type="tel"],
+.login input[type="date"],
+.login input[type="number"] {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 7px 15px;
+  width: 100%;
+  background-color: #e8eeef;
+
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 20px;
+}
+.login .location
+{
+  color:#3ac162;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 20px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 7px 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 20px;
+}
+.location .photoLabel{
+   width:fit-content;
+}
+.location:hover .photoLabel::after{
+  width:100%;
+}
+.login button {
+  padding: 5px 39px 5px 39px;
+  color: #fff;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 2px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-bottom: 10px;
+}
+
+
+.login fieldset {
+  border: none;
+}
+.login label {
+  display: block;
+  margin-bottom: 2px;
+  font-weight: 550;
+}
+.radioGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 10px;
+}
+.login label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+
+/*End of Login*/
+/* profile */
+.profile{
+  background-color: rgb(201, 60, 60);
+  color:white;
+  padding:25px;
+  width:90%;
+  margin:20px auto;
+  min-height: 80vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.profile img{
+  border-radius: 50%;
+  height:200px;
+}
+.profile button{
+  padding:10px;
+  background-color: white;
+  color:rgb(130, 35, 35);
+  border-radius: 10px;
+  font-weight: bolder;
+  border:none;
+
+}
+/*  profile edit */
+.editProfile
+{
+  background-color: rgb(201, 60, 60);
+  color:white;
+  font-family: "Nunito", sans-serif;
+  display: grid;
+  grid-template-columns: 2fr 3fr 3fr;
+ column-gap: 20px;
+ padding:20px;
+  justify-content: center;
+  width:95%;
+  border-radius: 20px;
+  margin:20px auto;
+  min-height: 80vh;
+}
+.editProfile img{
+ border-radius: 50%;
+  
+}
+.editProfile form{
+  margin:10px auto;
+
+}
+.editProfile input[type="text"],
+.editProfile input[type="password"],
+.editProfile input[type="email"],
+.editProfile input[type="tel"],
+.editProfile input[type="date"],
+.editProfile input[type="number"] {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 7px 15px;
+  width: 100%;
+  background-color: #e8eeef;
+
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 10px;
+}
+.editProfile ::placeholder{
+   color:black;
+}
+.editProfile button {
+  padding: 5px 39px 5px 39px;
+  color: #fff;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 2px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-bottom: 10px;
+}
+
+.editProfile fieldset {
+  border: none;
+}
+.editProfile label {
+  margin-bottom: 2px;
+  font-weight: 550;
+}
+
+#photo{
+  display: none;
+}
+.photoLabel{
+  
+  display: inline;
+  margin:0 auto;
+  position: relative;
+  cursor: pointer;
+  
+}
+
+.photoLabel::after{
+  position: absolute;
+  top:25px;
+  left:0;
+  content:'';
+  background-color: #4bc970;
+  width:0;
+  height:4px;
+  border-radius: 10px;
+  transition:width 400ms ease-in-out;
+}
+.photoLabel:hover::after{
+  width:100%;
+ 
+}
+@media only screen and (max-width: 768px){
+  .editProfile{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* review */
+
+.Booking-Heading {
+  text-transform: uppercase;
+  font-weight: 900;
+  border-left: 10px solid #fec500;
+  padding-left: 10px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+.cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.book-card{
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.date{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border-right: 8px white dotted;
+  justify-content: center;
+  align-items: center;
+}
+
+.date img{
+  width: 80%;
+  height: 80%;
+}
+
+.date:before,
+.date:after
+{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  position: absolute;
+  top: -15px ;
+  right: -18px;
+  z-index: 1;
+  border-radius: 50%
+}
+
+.date:after
+{
+  top: auto;
+  bottom: -15px
+}
+
+.card-cont{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  padding: 15px 25px;
+}
+
+.card-cont button{
+  margin-left: 10px;
+  background-color: dodgerblue;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.review-card{
+  background-color: rgb(201 60 60);
+  color: white;
+  font-weight: 550;
+}
+
+@media only screen and (max-width: 768px){
+  .cont{
+    flex-direction: column;
+    align-items: center;
+  }
+  .book-card{
+    width: 100%;
+  }
+  .review-card{
+    width:85%;
+  }
+}
+/* review window*/
+.hideBackground{
+  top:0; left: 0;
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   background: rgba(50,50,50,0.9);
+   z-index: 2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.reviewWindow{
+   position: fixed;
+   background-color: rgb(201, 60, 60);
+   color:white;
+   height:500px;
+   width:500px;
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+
+}
+
+
+@media only screen and (max-width: 768px){
+
+  .reviewWindow{
+    height:500px;
+    width:100vw;
+  }
+
+}
+
+/*carousel-start*/
+
+.carousel {
+  height: 80vh;
+  max-width: 100%;
+  background-image: url("../src/Images/carsouel2(1).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  overflow: hidden;
+}
+.carouselContent {
+  color:  rgb(201, 60, 60);
+  width: 75%;
+  height: 60%;
+  text-align: center;
+}
+.mainButton {
+  margin-top: 20px;
+  font-weight: bolder;
+  font-size: x-large;
+  color: white;
+  background-color: rgb(201, 60, 60);
+  padding: 10px 16px;
+  border: 2px solid white;
+  border-radius: 30px;
+  position: relative;
+}
+
+.mainButton:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+  transform: translateY(-4px);
+}
+
+.mainButton:active {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.7);
+}
+
+@media only screen and (max-width: 768px){
+  .carousel{
+    grid-template-columns: 1fr;
+  }
+  .forPhone{
+    font-size: small;
+  }
+}
+/* howItWorks component*/
+
+.howItWorks
+{
+  background-color: rgb(201, 60, 60);
+  color:whitesmoke;
+  padding:20px 0px;
+ 
+}
+ .howItWorks .wraper{
+  max-width: 1050px;
+  margin:auto;
+  
+}
+.points
+{
+  display: inline-block;
+  width: 31%;
+  text-align: center;
+  margin: 10px 1% 10px 1%;
+  vertical-align: top;
+  line-height: 30px;
+}
+
+/* provided Services */
+.providedServices{
+  padding:20px 0px;
+}
+.providedServices .wraper{
+  max-width: 1200px;
+  margin: auto;
+  
+  
+}
+.providedServices .points{
+  vertical-align: bottom;
+  background-color: rgb(201, 60, 60);
+  color:white;
+  padding:10px;
+}
+.providedServices .points img{
+  width: 100%;
+  height: 250px;
+}
+.providedServices .btn{
+  border: solid whitesmoke 2px;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 20px;
+  margin: 18px;
+  cursor: pointer;
+  color: white;
+}
+.providedServices .btn:hover{
+  background-color: rgb(235,64,64);
+  color: white;
+}
+@media only screen and (max-width: 768px){
+  .howItWorks .wraper,
+  .providedServices .wraper{
+   all:unset;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ .wraper .points{
+   width:90% !important;
+ }
+}
+/*Top Rated */
+
+.topRated .wraper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap:20px;
+  width:85%;
+ margin:20px auto;
+}
+@media only screen and (max-width: 768px){
+  .topRated .wraper{
+    grid-template-columns: 1fr;
+    width:65%;
+  }
+}
+
+/* trust component */
+
+.trust{
+  background-color: rgb(201, 60, 60);
+  text-align: center;
+  color: white;
+}
+
+.trust .wraper
+{
+ 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  width:100%;
+  max-width: 1000px;
+  margin:30px auto;
+ 
+}
+.trust .points{
+  width:100%;
+}
+.trust .wraper p{
+  width: 100%;
+  margin:10px 0;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 768px){
+  .trust{
+    padding:30px;
+  }
+  .trust .wraper{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* findMaidspage start*/
+
+.findMaidsPage{
+  width: 93vw;
+  margin: 15px auto;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  column-gap: 10px;
+}
+.filters{
+  position: sticky;
+  top:0px;
+  height: fit-content;
+
+}
+.filters > label,
+.sortby2 >label{
+  font-size: larger;
+  font-weight: 625;
+  margin:0;
+}
+.checkboxes {
+  margin-top: -15px;
+}
+.checkboxes label {
+  margin: 2px 0;
+}
+.checkboxes label input {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+input[type="range"] {
+  width: 90%;
+}
+
+/*maidList */
+.maidsList{
+  margin-top: 20px;
+  margin-left:10px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 25px;
+  row-gap: 10px;
+}
+/* Maid Card CSS */
+.maidCard{
+  position:relative;
+  height:380px;
+  max-width: 100%;
+  background-color: rgb(201, 60, 60);
+  color:white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.maidInfo{
+    padding:5px;
+}
+.maidCard img{
+  width:100%;
+  height: 40%;
+}
+.maidCard p{
+  margin: 0;
+}
+.services
+{
+  margin-top:10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 5px;
+  
+}
+.price
+{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding:10px;
+
+}
+.sortby2{
+  display: none;
+}
+.filters-toggle-label{
+  display: none;
+}
+
+@media only screen and (max-width: 768px){
+  .findMaidsPage{
+   display: block;
+  }
+  .filters-toggle-label{
+    display: block;
+    padding:10px 20px;
+    text-align: right;
+    font-size: larger;
+  }
+  .filters{
+    position: relative;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+  }
+  .filters-toggle-checkbox:checked ~.filters{
+    max-height: 1200px;
+
+  }
+ 
+  .maidsList{
+    width:90%;
+    margin:20px auto;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+  .sortby1{
+    display: none;
+  }
+  .sortby2{
+    display: block;
+  }
+  .sortby21 {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: space-between;
+  }
+  .sortby21 p{
+    display: inline-block;
+    padding:0 10px;
+    margin: 0;
+    background-color: rgb(227, 224, 224);
+    border-radius: 5px;
+  }
+ 
+  
+}
+/* maid detail page*/
+.maidDetailPage
+{
+  width:93vw;
+  overflow: hidden;
+  margin: auto;
+}
+.maidBioData
+{
+  margin:20px auto;
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
+}
+.maidBioData img{
+ width: 100%;
+}
+.maidData{
+  display: flex;
+  flex-direction: column;
+}
+
+.maidData p{
+  background-color: crimson;
+  border-left: solid brown 5px;
+  font-size: larger;
+  padding-left: 10px;
+  color: white;
+}
+
+.bookingForm{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr;
+}
+.formData{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 10px;
+}
+.dropdown
+{
+  position: relative;
+  cursor: pointer;
+  
+  font-size: larger;
+}
+.values{
+ 
+  position:absolute;
+  background-color: white;
+  z-index: 2;
+  padding:20px 10px;
+  border:solid 2px rgb(207, 206, 206);
+  visibility: hidden;
+}
+.dropdown:hover .values{
+  visibility: visible;
+  
+}
+.values label{
+  cursor: pointer;
+}
+.values input[type=checkbox]{
+  height:20px;
+  width: 20px;
+  cursor: pointer;
+}
+.priceShow{
+  border-left: solid brown 2px;
+  border-right: solid brown 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 20px;
+  margin-right: 10px;
+}
+.price1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.book{
+  margin-left: 20px;
+  font-size: xx-large;
+  font-weight: 550;
+  color: white;
+  background-color: rgb(236, 39, 39);
+  border-radius: 30px;
+}
+
+@media only screen and (max-width: 768px){
+  .maidBioData{
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  .bookingForm{
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  .formData{
+    flex-direction: column;
+    row-gap: 5px;
+  }
+  .dropdown{
+    text-align: center;
+  }
+  .values{
+    all:unset;
+    
+    position: relative;
+    padding:20px 30px;
+    border:solid 2px rgb(207, 206, 206);
+    display: flex !important;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    
+  }
+}
+/* reviews*/
+
+.reviews
+{
+  width: 100%;
+}
+.reviews h3::after{
+ 
+    content: ".";
+    display: block;
+    height: 25px;
+    width: 270px;
+    margin: 0px auto;
+    text-indent: -9999px;
+    border-top: 3px solid rgba(201, 60, 60, 1);
+  }
+  .rating{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    column-gap: 1px;
+  }
+  .ratingbox {
+    background: rgba(201, 60, 60);
+    border: solid rgba(201, 60, 60);
+    border-radius: 5px;
+    height:175px;
+  }
+  .actualRating{
+    background-color: white;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: center;
+  font-size: xx-large;
+ 
+  color: rgb(201,60,60);
+  }
+  .reviewSlider
+  {
+    overflow: hidden;
+  }
+  .cardforreviews {
+    margin-left: 10px;
+    padding:10px;
+    
+    border: solid whitesmoke;
+    height: 200px;
+    overflow-y: scroll;
+    z-index: 2;
+    scrollbar-width: thin;
+  }
+  .cardforreviews::-webkit-scrollbar {
+    width: 40px;
+  }
+  .slick-slider{
+    padding:0 10px;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 23px !important;
+    opacity: 10 !important;
+    z-index:5 !important;
+  }
+  .slick-next:before {
+    color: black !important;
+    margin-left: -50px !important;
+  }
+  .slick-prev:before {
+    color: black !important;
+    margin-right: -50px !important;
+  }
+
+  @media only screen and (max-width: 768px){
+    .rating{
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+      margin:10px 0;
+    }
+    .ratingbox{
+      width:80%;
+      margin:auto;
+    }
+    .reviews h3::after{
+      width:225px;
+    }
+    .cardforreviews{
+      height:250px;
+    }
+ }
+/* footer starts */
+
+.footer
+{
+  padding:15px 10px 15px 30px;
+  background-color: rgb(130, 35, 35);
+  display: grid;
+  grid-template-columns:2fr 3fr 3fr 4fr;
+  column-gap: 20px;
+  justify-content: center;
+  color:white;
+  
+}
+
+/* About us*/
+.ourTeam h4{
+  margin:20px 0 5px 0;
+  font-weight: 550;
+}
+.ourTeam  p{
+ margin:0;
+ margin-left:20px;
+}
+/* Contact us */
+
+.contactUs p{
+  font-size: 500;
+
+}
+/* constactForm starts*/
+.contactForm {
+  width: 90%;
+  
+}
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+textarea {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 7px 15px;
+  width: 100%;
+  background-color: #e8eeef;
+
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 20px;
+}
+.contactForm textarea {
+  height: 80px;
+}
+
+.contactForm fieldset {
+  border: none;
+}
+.contactForm label {
+  display: block;
+  margin-bottom: 2px;
+  font-weight: 550;
+}
+
+
+.contactForm button, .reviewWindow button {
+  padding: 5px 39px 5px 39px;
+  color: #fff;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 2px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px){
+  .footer{
+    grid-template-columns: 1fr;
+    row-gap: 35px;
+  }
+}
+
