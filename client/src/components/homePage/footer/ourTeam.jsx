@@ -5,12 +5,9 @@ function OurTeam() {
     <>
       <div className="ourTeam">
         <h3 style={{ fontWeight: "bolder" }}>About Me</h3>
-        <h4>Ashutosh Saini</h4>
+        <h4>Vasu Bajaj</h4>
         <p>
-          <FaHandPointRight /> Backend Developer
-        </p>
-        <p>
-          <FaHandPointRight /> Frontend Developer
+          <FaHandPointRight /> Software Developer
         </p>
         <p>
           <FaHandPointRight /> UI/UX Designer

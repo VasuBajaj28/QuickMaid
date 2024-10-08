@@ -26,7 +26,7 @@ function Footer() {
         }}
       >
         {" "}
-        © 2021 Maid Booking. All rights reserved.
+        © 2024 Maid Booking. All rights reserved.
       </p>
     </>
   );

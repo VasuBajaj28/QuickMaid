@@ -15,11 +15,11 @@ function ContactUs() {
         </p>
         <p>
           <MdEmail />
-          &nbsp;&nbsp; 9058139810ig@gmail.com
+          &nbsp;&nbsp; vasu.503bajaj@gmail.com
         </p>
         <p>
           <AiFillPhone />
-          &nbsp;&nbsp; 9058139810
+          &nbsp;&nbsp; 9996755212
         </p>
       </div>
     </>
